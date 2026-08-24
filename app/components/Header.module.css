@@ -1,0 +1,14 @@
+.header-container {
+  margin-top: 10rem;
+  text-align: center;
+}
+
+.header {
+  font-family: var(--header-font);
+  font-size: 5rem;
+  letter-spacing: 1.25px;
+}
+
+.subheader {
+  font-weight: 250;
+}

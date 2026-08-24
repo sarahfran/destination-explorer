@@ -1,5 +1,10 @@
 import styles from "./page.module.css";
+import Header from "./components/Header";
 
 export default function HomePage() {
-  return <h1>Hello!</h1>
+  return (
+    <main className={styles.main}>
+      <Header />
+    </main>
+  )
 }
