@@ -1,3 +1,11 @@
+.main {
+  max-width: 75%;
+  margin: 0 auto;
+}
+
+
+
+/* Nextjs template */
 .page {
   --background: #fafafa;
   --foreground: #fff;
@@ -18,7 +26,7 @@
   background-color: var(--background);
 }
 
-.main {
+/* .main {
   display: flex;
   flex: 1;
   width: 100%;
@@ -28,7 +36,7 @@
   justify-content: space-between;
   background-color: var(--foreground);
   padding: 120px 60px;
-}
+} */
 
 .intro {
   display: flex;
@@ -108,9 +116,9 @@ a.secondary {
 }
 
 @media (max-width: 600px) {
-  .main {
+  /* .main {
     padding: 48px 24px;
-  }
+  } */
 
   .intro {
     gap: 16px;
