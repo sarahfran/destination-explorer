@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "city": "Tokyo",
+    "country": "Japan",
+    "population": 13960000,
+    "image": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf",
+    "description": "A city where ancient temples sit beside neon skyscrapers, and every neighborhood feels like its own world.",
+    "tags": ["Culture & Heritage", "City Escapes", "Architecture"]
+  },
+  {
+    "id": 2,
+    "city": "Paris",
+    "country": "France",
+    "population": 2148000,
+    "image": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34",
+    "description": "Home to world-class art, architecture, and pastries that are worth the trip alone.",
+    "tags": ["Culture & Heritage", "City Escapes", "Architecture"]
+  },
+  {
+    "id": 3,
+    "city": "London",
+    "country": "United Kingdom",
+    "population": 8982000,
+    "image": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad",
+    "description": "A sprawling, historic capital with museums, markets, and parks around every corner.",
+    "tags": ["Culture & Heritage", "City Escapes", "Architecture"]
+  },
+  {
+    "id": 4,
+    "city": "Queenstown",
+    "country": "New Zealand",
+    "population": 15800,
+    "image": "https://images.unsplash.com/photo-1589871173980-5c353c692a3e",
+    "description": "New Zealand's adventure capital, framed by mountains and a stunning alpine lake.",
+    "tags": ["Nature & Wildlife", "Mountains", "Adventure", "Hiking"]
+  },
+  {
+    "id": 5,
+    "city": "Reykjavik",
+    "country": "Iceland",
+    "population": 128000,
+    "image": "https://images.unsplash.com/photo-1504829857797-ddff29c27927",
+    "description": "Gateway to glaciers, geothermal pools, and the Northern Lights.",
+    "tags": ["Nature & Wildlife", "Mountains", "Adventure", "Hiking"]
+  },
+  {
+    "id": 6,
+    "city": "Marrakech",
+    "country": "Morocco",
+    "population": 928000,
+    "image": "https://images.unsplash.com/photo-1489749798305-4fea3ae63d43",
+    "description": "Vibrant souks, rich history, and stunning architecture in the heart of Morocco.",
+    "tags": ["Culture & Heritage", "Architecture", "Adventure"]
+  }
+]
