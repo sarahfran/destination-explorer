@@ -21,6 +21,5 @@ export default function DestinationExplorer({destinations}){
       <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
       <DestinationGrid destinations={filteredDestinations} />
     </>
-    // add conditional to show 'no destinations found' if not included
   )
 }
