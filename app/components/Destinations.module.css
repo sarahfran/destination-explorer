@@ -1,0 +1,48 @@
+.destinations-heading {
+  font-family: var(--header-font);
+  letter-spacing: 0.5px;
+}
+
+/*  Grid layout */
+
+.destinations-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+/* Cards */
+
+.destination-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.destination-card h2 {
+  font-family: var(--header-font);
+  letter-spacing: 0.5px;
+  margin-bottom: 0.15rem;
+}
+
+.destination-image {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+}
+
+.destination-info {
+  padding: 1rem;
+}
+
+.destination-info label {
+  font-size: 0.9rem;
+}
+
+.destination-info p {
+  font-size: 0.875rem;
+  margin-top: 0.75rem;
+}
