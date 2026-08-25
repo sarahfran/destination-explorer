@@ -1,43 +1,16 @@
 import styles from './Destinations.module.css';
 
-export default function DestinationCard(){
+export default function DestinationCard({ destination }){
   return (
-    <>
-     <article className={styles['destination-card']}>
-      <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf" alt="Tokyo" className={styles['destination-image']}></img>
-      <div className={styles['destination-info']}>
-        <h2>Destination Name</h2>
-        <label>Country</label>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
-    </article>
-
+    
     <article className={styles['destination-card']}>
-      <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf" alt="Tokyo" className={styles['destination-image']}></img>
+      <img src={destination.image} alt={destination.city} className={styles['destination-image']}></img>
       <div className={styles['destination-info']}>
-        <h2>Destination Name</h2>
-        <label>Country</label>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <h2 key={destination.city}>{destination.city}</h2>
+        <label>{destination.country}</label>
+        <p>{destination.description}</p>
       </div>
     </article>
 
-    <article className={styles['destination-card']}>
-      <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf" alt="Tokyo" className={styles['destination-image']}></img>
-      <div className={styles['destination-info']}>
-        <h2>Destination Name</h2>
-        <label>Country</label>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
-    </article>
-
-     <article className={styles['destination-card']}>
-      <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf" alt="Tokyo" className={styles['destination-image']}></img>
-      <div className={styles['destination-info']}>
-        <h2>Destination Name</h2>
-        <label>Country</label>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
-    </article>
-    </>
   )
 }
