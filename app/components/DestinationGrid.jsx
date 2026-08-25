@@ -5,7 +5,7 @@ export default function DestinationGrid({ destinations }){
    
   // refactor to use ternary operator
     if(destinations.length === 0){
-      return <p>Sorry, no destinations found!</p>
+      return <h2 className={styles['destinations-heading']}>Sorry, no destinations found!</h2>
     }
 
     return (  
