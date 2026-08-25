@@ -1,0 +1,24 @@
+.search {
+  margin-bottom: 4rem;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  font-family: var(--body-font);
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+}
+
+/* .search-tags {
+  margin-top: 1.5rem;
+}
+
+.search-tags span {
+  background-color: white;
+  border: 1px solid #d1d5db;
+  border-radius: 999px;
+  padding: 6px 12px;
+  margin-right: 0.5rem;
+} */
