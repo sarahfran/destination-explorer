@@ -1,6 +1,6 @@
 import styles from './Search.module.css';
 
-export default function Search(){
+export default function SearchBar(){
   return (
     <section className={styles.search}>
        <input type="" value="" className={styles['search-input']} placeholder="Search by country or city"></input>
