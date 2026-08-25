@@ -1,9 +1,9 @@
 import styles from './Search.module.css';
 
-export default function SearchBar(){
+export default function SearchBar({ searchTerm, setSearchTerm }){
   return (
     <section className={styles.search}>
-       <input type="" value="" className={styles['search-input']} placeholder="Search by country or city"></input>
+       <input type="text" value={searchTerm} onChange={(event) => setSearchTerm(event.target.value)} className={styles['search-input']} placeholder="Search by country or city"></input>
        
        {/* <div className={styles['search-tags']}>
         <span>Culture & Heritage</span>
