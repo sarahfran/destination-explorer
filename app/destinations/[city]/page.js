@@ -16,10 +16,11 @@ export default async function DestinationDetailPage({ params }){
 
   return (
     <>
-    <div className="back-banner">
+    {/* <div className="back-banner">
       <Link href="/">&larr; Back to destinations</Link>
-    </div>
+    </div> */}
      <div className="destination-banner">
+      <Link href="/" className="back">&larr; Back to destinations</Link>
       {/* <div className="destination-banner" style={{ backgroundImage: `url(${destination.image})` }} role="img" aria-label={destination.city}></div> */}
       <div className="image-filter">
         <img src={destination.image} className="destination-banner-image" style={{ backgroundImage: `url(${destination.image})` }} alt={destination.city} />
@@ -30,9 +31,20 @@ export default async function DestinationDetailPage({ params }){
         <p>{destination.description}</p>
       </div>
     </div>  
-    {/* <div className="destination-overview">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </div> */}
+    <div className="destination-overview">
+      <div>
+        <h3>Best time to visit</h3>
+        <p>{destination.bestTimeToVisit}</p>
+      </div>
+      <div>
+        <h3>{destination.city} Highlights</h3>
+        <ul>
+          {destination.highlights.map((highlight) => 
+            <li key={highlight}>{highlight}</li>
+          )}
+        </ul>
+      </div>
+    </div>
     </>
 
   )

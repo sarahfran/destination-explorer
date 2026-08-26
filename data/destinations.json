@@ -6,7 +6,9 @@
     "population": 13960000,
     "image": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf",
     "description": "A city where ancient temples sit beside neon skyscrapers, and every neighborhood feels like its own world.",
-    "tags": ["Culture & Heritage", "City Escapes", "Architecture"]
+    "tags": ["Culture & Heritage", "City Escapes", "Architecture"],
+    "bestTimeToVisit": "April to October",
+    "highlights": ["Senso-ji Temple", "Shibuya Crossing", "Tsukiji Outer Market"]
   },
   {
     "id": 2,
@@ -15,7 +17,9 @@
     "population": 2148000,
     "image": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34",
     "description": "Home to world-class art, architecture, and pastries that are worth the trip alone.",
-    "tags": ["Culture & Heritage", "City Escapes", "Architecture"]
+    "tags": ["Culture & Heritage", "City Escapes", "Architecture"],
+    "bestTimeToVisit": "April to October",
+    "highlights": ["The Louvre", "Eiffel Tower at sunset", "Montmartre cafés"]
   },
   {
     "id": 3,
@@ -24,7 +28,9 @@
     "population": 8982000,
     "image": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad",
     "description": "A sprawling, historic capital with museums, markets, and parks around every corner.",
-    "tags": ["Culture & Heritage", "City Escapes", "Architecture"]
+    "tags": ["Culture & Heritage", "City Escapes", "Architecture"],
+    "bestTimeToVisit": "June to September",
+    "highlights": ["The British Museum", "Borough Market", "A walk along the Thames"]
   },
   {
     "id": 4,
@@ -33,7 +39,9 @@
     "population": 15800,
     "image": "https://images.unsplash.com/photo-1600466403153-50193d187dde",
     "description": "New Zealand's adventure capital, framed by mountains and a stunning alpine lake.",
-    "tags": ["Nature & Wildlife", "Mountains", "Adventure", "Hiking"]
+    "tags": ["Nature & Wildlife", "Mountains", "Adventure", "Hiking"],
+    "bestTimeToVisit": "Novebmer to April",
+    "highlights": ["Bungee jumping at Kawarau Bridge", "Skyline Gondola views", "Lake Wakatipu"]
   },
   {
     "id": 5,
@@ -42,7 +50,9 @@
     "population": 128000,
     "image": "https://images.unsplash.com/photo-1504829857797-ddff29c27927",
     "description": "Gateway to glaciers, geothermal pools, and the Northern Lights.",
-    "tags": ["Nature & Wildlife", "Mountains", "Adventure", "Hiking"]
+    "tags": ["Nature & Wildlife", "Mountains", "Adventure", "Hiking"],
+    "bestTimeToVisit": "Novebmer to April",
+    "highlights": ["Blue Lagoon", "Northern Lights viewing", "Hallgrímskirkja church"]
   },
   {
     "id": 6,
@@ -51,6 +61,8 @@
     "population": 928000,
     "image": "https://images.unsplash.com/photo-1489749798305-4fea3ae63d43",
     "description": "Vibrant souks, rich history, and stunning architecture in the heart of Morocco.",
-    "tags": ["Culture & Heritage", "Architecture", "Adventure"]
+    "tags": ["Culture & Heritage", "Architecture", "Adventure"],
+    "bestTimeToVisit": "January to June",
+    "highlights": ["Jemaa el-Fnaa square", "Bahia Palace", "Souk shopping"]
   }
 ]
