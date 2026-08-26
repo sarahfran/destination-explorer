@@ -1,0 +1,67 @@
+.destination-banner {
+  position: relative;
+  height: 525px;
+  overflow: hidden;
+}
+
+.back {
+  background-color: white;
+  padding: 12px 12px;
+  display: inline-block;
+  border-radius: 12px;
+  margin-left: 2em;
+  margin-top: 2em;
+  color: var(--foreground);
+  text-decoration: none;
+}
+
+.back:hover {
+  background-color: var(--foreground);
+  color: white;
+}
+
+
+.destination-banner h1 {
+  font-family: var(--header-font);
+  font-size: 6rem;
+  letter-spacing: 1px;
+  color: white;
+}
+
+.destination-header {
+  margin-top: 12rem;
+  padding-left: 7.5rem;
+}
+
+.destination-header p {
+  color: white;
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+
+.destination-banner-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* .back-banner {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+} */
+
+.destination-overview {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding-left: 7.5rem;
+  padding-top: 3.5rem;
+}
+
+.destination-overview li {
+  list-style: none;
+}
