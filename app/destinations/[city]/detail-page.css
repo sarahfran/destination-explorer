@@ -1,0 +1,50 @@
+.destination-banner {
+  position: relative;
+  height: 525px;
+  overflow: hidden;
+}
+
+.destination-banner h1 {
+  font-family: var(--header-font);
+  font-size: 6rem;
+  letter-spacing: 1px;
+  color: white;
+}
+
+.destination-header {
+  margin-top: 12rem;
+  padding-left: 7.5rem;
+}
+
+.destination-header p {
+  color: white;
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+
+.destination-banner-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* .image-filter {
+
+} */
+
+.back-banner {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+}
+
+.back-banner a {
+  color: var(--foreground);
+  text-decoration: none;
+  padding-left: 1.5rem;
+
+}
