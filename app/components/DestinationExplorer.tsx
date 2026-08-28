@@ -4,10 +4,15 @@ import { useState } from "react";
 
 import SearchBar from "./SearchBar";
 import DestinationGrid from "./DestinationGrid";
+import { Destination } from "@/app/types";
 
-export default function DestinationExplorer({destinations}){
+interface DestinationExplorerProps {
+  destinations: Destination[];
+}
 
-  const [searchTerm, setSearchTerm] = useState("");
+export default function DestinationExplorer({destinations} : DestinationExplorerProps){
+
+  const [searchTerm, setSearchTerm] = useState<string>("");
 
   const filteredDestinations = destinations.filter((destination) => {
     return (

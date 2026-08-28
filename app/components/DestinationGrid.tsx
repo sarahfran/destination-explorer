@@ -1,7 +1,12 @@
 import DestinationCard from './DestinationCard';
 import styles from './Destinations.module.css';
+import { Destination } from "@/app/types";
 
-export default function DestinationGrid({ destinations }){
+interface DestinationGridProps {
+  destinations: Destination[];
+}
+
+export default function DestinationGrid({ destinations } : DestinationGridProps){
    
   // refactor to use ternary operator
     if(destinations.length === 0){
