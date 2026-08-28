@@ -2,9 +2,13 @@ import destinations from "../../../data/destinations.json";
 import "./detail-page.css";
 import Link from "next/link";
 
-export default async function DestinationDetailPage({ params }){
+interface DestinationPageProps {
+  params: {city: string};
+}
 
-  const {city} = await params;
+export default async function DestinationDetailPage({ params } : DestinationPageProps){
+
+  const { city } = await params;
 
   const destination = destinations.find(
     (destination) => destination.city.toLowerCase() === city.toLowerCase()
