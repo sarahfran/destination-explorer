@@ -1,5 +1,5 @@
 .search {
-  margin-bottom: 4rem;
+  margin-bottom: 1.5rem;
 }
 
 .search-input {
@@ -11,14 +11,14 @@
   border-radius: 8px;
 }
 
-/* .search-tags {
-  margin-top: 1.5rem;
+.interest-tags {
+  margin-bottom: 4rem;
 }
 
-.search-tags span {
+.tag {
   background-color: white;
   border: 1px solid #d1d5db;
   border-radius: 999px;
   padding: 6px 12px;
   margin-right: 0.5rem;
-} */
+}

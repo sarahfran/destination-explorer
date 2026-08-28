@@ -3,6 +3,7 @@
 import { useState } from "react";
 
 import SearchBar from "./SearchBar";
+import InterestFilters from './InterestFilters';
 import DestinationGrid from "./DestinationGrid";
 import { Destination } from "@/app/types";
 
@@ -24,6 +25,7 @@ export default function DestinationExplorer({destinations} : DestinationExplorer
   return (
     <>
       <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
+      <InterestFilters destinations={destinations}/>
       <DestinationGrid destinations={filteredDestinations} />
     </>
   )
