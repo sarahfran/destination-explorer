@@ -22,3 +22,8 @@
   padding: 6px 12px;
   margin-right: 0.5rem;
 }
+
+.tag-selected {
+  background-color: blue;
+  color: white;
+}

@@ -27,6 +27,7 @@ export default function DestinationExplorer({destinations} : DestinationExplorer
       <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
       <InterestFilters destinations={destinations}/>
       <DestinationGrid destinations={filteredDestinations} />
+      {/* pass through updated selectedTags state in DestinationGrid */}
     </>
   )
 }
