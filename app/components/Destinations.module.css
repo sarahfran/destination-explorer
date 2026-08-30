@@ -15,6 +15,7 @@
 /* Cards */
 
 .destination-card {
+  height: 100%;
   background: white;
   border-radius: 10px;
   overflow: hidden;
@@ -45,4 +46,25 @@
 .destination-info p {
   font-size: 0.875rem;
   margin-top: 0.75rem;
+}
+
+.destinations-list a {
+  text-decoration: none;
+}
+
+.destination-info h2, .destination-info p {
+  color: var(--foreground);
+}
+
+.destination-info label {
+  color: grey;
+}
+
+.destination-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.destination-card {
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
