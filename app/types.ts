@@ -7,5 +7,5 @@ export interface Destination {
   description: string;
   tags: string[];
   bestTimeToVisit: string;
-  highlights: string[];
+  highlights: {label: string, image: string}[];
 }

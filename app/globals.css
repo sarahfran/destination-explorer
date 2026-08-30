@@ -31,4 +31,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+h2 {
+  font-family: var(--header-font);
+  letter-spacing: .5px;
+}
+
 

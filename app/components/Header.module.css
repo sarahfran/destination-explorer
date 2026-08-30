@@ -1,6 +1,6 @@
 .header-container {
   margin-top: 10rem;
-  margin-bottom: 5rem;
+  margin-bottom: 4rem;
   text-align: center;
 }
 
@@ -12,4 +12,5 @@
 
 .subheader {
   font-weight: 250;
+  margin-top: 1.25rem;
 }

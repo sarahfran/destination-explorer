@@ -1,6 +1,6 @@
 import "./globals.css";
 import { Inter, Cal_Sans } from "next/font/google";
-import type { Metadata } from "next";
+import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "My Next.js App",
