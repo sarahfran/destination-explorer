@@ -41,6 +41,8 @@ I used AI throughout my learning process, to help explain concepts that were dif
 
 With time I would like to develop this project further and make the application more complex. For example:
 - Fetching data from a real or mock API endpoint
-- Allow users to browse destinations by regions, or through other filtering/sorting options
+- Allow users to browse destinations by regions of the world, or through other filtering/sorting options
 - Allow users to favourite destinations 
-- Introduce pagination or a way to display a larger dataset for better UX
+- Introduce pagination or a way to manage a larger dataset for better UX
+- Show a search results count
+- Potentially display the destination details within the same window as search; where users can select destinations and view them side by side, rather than routing to a new page 
