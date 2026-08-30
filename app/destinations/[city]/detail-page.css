@@ -13,11 +13,12 @@
   margin-top: 2em;
   color: var(--foreground);
   text-decoration: none;
+   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
 .back:hover {
-  background-color: var(--foreground);
-  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
 }
 
 
@@ -48,6 +49,25 @@
   left: 0;
   z-index: -1;
 }
+
+/* .image-filter {
+  position: relative;
+  display: inline-block; 
+}
+
+.image-filter {
+  height: auto;display: block;width: 100%;
+}
+
+.image-filter::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100;
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%);
+} */
 
 /* .back-banner {
   height: 5rem;
