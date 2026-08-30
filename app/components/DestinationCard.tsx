@@ -9,7 +9,7 @@ interface DestinationCardProps {
 export default function DestinationCard({ destination } : DestinationCardProps){
   return (
 
-    <Link href={`/destinations/${destination.city}`}>
+    <Link className={styles['destination-link']} href={`/destinations/${destination.city}`}>
       <article className={styles['destination-card']}>
         <img src={destination.image} alt={destination.city} className={styles['destination-image']}></img>
         <div className={styles['destination-info']}>
