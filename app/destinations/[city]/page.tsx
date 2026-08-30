@@ -28,9 +28,29 @@ export default async function DestinationDetailPage({ params } : DestinationPage
         <p>{destination.description}</p>
       </div>
     </div>  
+
     <section className="destination-overview">
+      <div className="destination-detail">
+        <h2>Best time to visit</h2>
+        <p>{destination.bestTimeToVisit}</p>
+      </div>
+
+      <div className="destination-detail">
+        <h2>Population</h2>
+        <p>{destination.population.toLocaleString()}</p>
+      </div>
+
+       <div className="destination-detail">
+        <h2>Known for</h2>
+        <div className="destination-tags">
+          {destination.tags.map((tag) => (
+            <span className="tag">{tag}</span>
+          ))}
+        </div>
+      </div>
+
       <div className="highlights">
-        <h1>{destination.city} Highlights</h1>
+        <h2>{destination.city} Highlights</h2>
         <ul className="highlights-list">
           {destination.highlights.map((highlight) => (
             <li key={highlight.label} className="highlight">
