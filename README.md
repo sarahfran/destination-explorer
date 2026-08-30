@@ -2,7 +2,7 @@
 
 A Next.js app for searching and browsing popular travel destinations.
 
-View live demo: [https://destination-explorer-lyart.vercel.app/]
+View live demo: https://destination-explorer-lyart.vercel.app/
 
 ## Features
 - Browse a selection of travel destinations
@@ -39,4 +39,8 @@ I used AI throughout my learning process, to help explain concepts that were dif
 
 ## Future Improvements
 
-With time I would like to develop this project further and make the searching and filtering more complex. For example, by allowing users to browse destinations by regions around the world or filter by specific travel interests. I would also like to improve the overall UI design and how the destination details are displayed.
+With time I would like to develop this project further and make the application more complex. For example:
+- Fetching data from a real or mock API endpoint
+- Allow users to browse destinations by regions, or through other filtering/sorting options
+- Allow users to favourite destinations 
+- Introduce pagination or a way to display a larger dataset for better UX
