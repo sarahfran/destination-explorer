@@ -20,35 +20,47 @@ export default async function DestinationDetailPage({ params } : DestinationPage
 
   return (
     <>
-    {/* <div className="back-banner">
-      <Link href="/">&larr; Back to destinations</Link>
-    </div> */}
-     <div className="destination-banner">
+    <div className="destination-banner">
       <Link href="/" className="back">&larr; Back to destinations</Link>
-      {/* <div className="destination-banner" style={{ backgroundImage: `url(${destination.image})` }} role="img" aria-label={destination.city}></div> */}
-      <div className="image-filter">
-        <img src={destination.image} className="destination-banner-image" style={{ backgroundImage: `url(${destination.image})` }} alt={destination.city} />
-      </div>
+      <img src={destination.image} className="destination-banner-image" style={{ backgroundImage: `url(${destination.image})` }} alt={destination.city} />
       <div className="destination-header">
         <h1>Explore {destination.city}</h1>
-        {/* <p>{destination.country}</p> */}
         <p>{destination.description}</p>
       </div>
     </div>  
-    <div className="destination-overview">
-      <div>
-        <h3>Best time to visit</h3>
+
+    <section className="destination-overview">
+      <div className="destination-detail">
+        <h2>Best time to visit</h2>
         <p>{destination.bestTimeToVisit}</p>
       </div>
-      <div>
-        <h3>{destination.city} Highlights</h3>
-        <ul>
-          {destination.highlights.map((highlight) => 
-            <li key={highlight}>{highlight}</li>
-          )}
+
+      <div className="destination-detail">
+        <h2>Population</h2>
+        <p>{destination.population.toLocaleString()}</p>
+      </div>
+
+       <div className="destination-detail">
+        <h2>Known for</h2>
+        <div className="destination-tags">
+          {destination.tags.map((tag) => (
+            <span className="tag">{tag}</span>
+          ))}
+        </div>
+      </div>
+
+      <div className="highlights">
+        <h2>{destination.city} Highlights</h2>
+        <ul className="highlights-list">
+          {destination.highlights.map((highlight) => (
+            <li key={highlight.label} className="highlight">
+              <img src={highlight.image} alt={highlight.label} className="highlights-image" />
+              <label>{highlight.label}</label>
+            </li>
+          ))}
         </ul>
       </div>
-    </div>
+    </section>
     </>
 
   )

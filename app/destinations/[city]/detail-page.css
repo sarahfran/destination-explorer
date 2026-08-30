@@ -1,3 +1,10 @@
+.destination-overview {
+  max-width: 75%;
+  margin-top: 3rem;
+  margin: 3rem auto;
+  padding-bottom: 10rem;
+}
+
 .destination-banner {
   position: relative;
   height: 525px;
@@ -30,8 +37,8 @@
 }
 
 .destination-header {
-  margin-top: 12rem;
-  padding-left: 7.5rem;
+  max-width: 75%;
+  margin: 12rem auto;
 }
 
 .destination-header p {
@@ -50,38 +57,42 @@
   z-index: -1;
 }
 
-/* .image-filter {
-  position: relative;
-  display: inline-block; 
-}
-
-.image-filter {
-  height: auto;display: block;width: 100%;
-}
-
-.image-filter::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100;
-  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%);
-} */
-
-/* .back-banner {
-  height: 5rem;
-  display: flex;
-  align-items: center;
-} */
-
-.destination-overview {
-  display: grid;
-  grid-template-columns: auto auto;
-  padding-left: 7.5rem;
-  padding-top: 3.5rem;
-}
-
 .destination-overview li {
   list-style: none;
+}
+
+/* Highlights */
+
+.highlights-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.highlights-image {
+  width: 100%;
+  height: 240px;
+  border-radius: 4px;
+}
+
+.destination-detail {
+  margin-bottom: 1.5rem;
+}
+
+.destination-detail h2 {
+  margin-bottom: 0.5rem;
+}
+
+.destination-tags {
+  margin-bottom: 4rem;
+  margin-top: 1rem;
+}
+
+.tag {
+  background-color: white;
+  border: 1px solid #d1d5db;
+  border-radius: 999px;
+  padding: 6px 12px;
+  margin-right: 0.5rem;
 }
