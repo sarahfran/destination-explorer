@@ -1,16 +1,16 @@
-.header-container {
+.header {
   margin-top: 10rem;
   margin-bottom: 4rem;
   text-align: center;
 }
 
-.header {
-  font-family: var(--header-font);
+.header h1 {
   font-size: 5rem;
   letter-spacing: 1.25px;
 }
 
-.subheader {
+.header h2 {
   font-weight: 250;
   margin-top: 1.25rem;
+  font-family: var(--body-font);
 }
