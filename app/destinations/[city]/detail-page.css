@@ -13,11 +13,14 @@
   margin-top: 2em;
   color: var(--foreground);
   text-decoration: none;
+   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
 .back:hover {
-  background-color: var(--foreground);
-  color: white;
+  /* background-color: var(--foreground); */
+  /* color: white; */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
 }
 
 
