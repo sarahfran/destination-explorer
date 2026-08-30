@@ -14,21 +14,26 @@ interface DestinationExplorerProps {
 export default function DestinationExplorer({destinations} : DestinationExplorerProps){
 
   const [searchTerm, setSearchTerm] = useState<string>("");
-  // const [selectedTags, setSelectedTags] = useState<string[]>([]);
-    // InterestFilters state needs to live in parent comp to access destinations data (not in InterestFilters)
+  const [selectedTags, setSelectedTags] = useState<string[]>([]);
 
-  // Todo: add filter logic for checking selectedTags, as well as searchTerm (to check search input AND selected interests)
   const filteredDestinations = destinations.filter((destination) => {
-    return (
-      destination.city.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      destination.country.toLowerCase().includes(searchTerm.toLowerCase())
-    );
+    
+    // Check if destination's city or country includes the current searchTerm
+    const matchedSearch = destination.city.toLowerCase().includes(searchTerm.toLowerCase()) || destination.country.toLowerCase().includes(searchTerm.toLowerCase());
+
+    // Check if destination has selected tags
+      // if no tags are selected (=== 0), each destination passes
+      // if tags are selected, the destination must share at least one tag present in selectedTags (using some() )
+    const matchedTags = selectedTags.length === 0 || destination.tags.some((tag) => selectedTags.includes(tag));
+
+    return matchedSearch && matchedTags;
+  
   });
 
   return (
     <>
       <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
-      <InterestFilters destinations={destinations}/>
+      <InterestFilters destinations={destinations} selectedTags={selectedTags} setSelectedTags={setSelectedTags}/>
       <DestinationGrid destinations={filteredDestinations} />
     </>
   )
