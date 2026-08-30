@@ -20,9 +20,6 @@ export default async function DestinationDetailPage({ params } : DestinationPage
 
   return (
     <>
-    {/* <div className="back-banner">
-      <Link href="/">&larr; Back to destinations</Link>
-    </div> */}
      <div className="destination-banner">
       <Link href="/" className="back">&larr; Back to destinations</Link>
       {/* <div className="destination-banner" style={{ backgroundImage: `url(${destination.image})` }} role="img" aria-label={destination.city}></div> */}
@@ -36,10 +33,10 @@ export default async function DestinationDetailPage({ params } : DestinationPage
       </div>
     </div>  
     <div className="destination-overview">
-      <div>
+      {/* <div>
         <h3>Best time to visit</h3>
         <p>{destination.bestTimeToVisit}</p>
-      </div>
+      </div> */}
       <div>
         <h3>{destination.city} Highlights</h3>
         <ul>

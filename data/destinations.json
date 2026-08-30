@@ -8,7 +8,11 @@
     "description": "A city where ancient temples sit beside neon skyscrapers, and every neighborhood feels like its own world.",
     "tags": ["Culture & Heritage", "City Escapes", "Architecture"],
     "bestTimeToVisit": "April to October",
-    "highlights": ["Senso-ji Temple", "Shibuya Crossing", "Tsukiji Outer Market"]
+    "highlights": [
+      { "label": "Senso-ji Temple", "image": "https://images.unsplash.com/photo-1478436127897-769e1b3f0f36" },
+      { "label": "Shibuya Crossing", "image": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26" },
+      { "label": "Tsukiji Outer Market", "image": "https://images.unsplash.com/photo-1553621042-f6e147245754" }
+    ]
   },
   {
     "id": 2,
@@ -19,7 +23,11 @@
     "description": "Home to world-class art, architecture, and pastries that are worth the trip alone.",
     "tags": ["Culture & Heritage", "City Escapes", "Architecture"],
     "bestTimeToVisit": "April to October",
-    "highlights": ["The Louvre", "Eiffel Tower at sunset", "Montmartre cafés"]
+    "highlights": [
+      { "label": "The Louvre", "image": "https://images.unsplash.com/photo-1499856871958-5b9627545d1a" },
+      { "label": "Eiffel Tower at sunset", "image": "https://images.unsplash.com/photo-1511739001486-6bfe10ce785f" },
+      { "label": "Montmartre cafés", "image": "https://images.unsplash.com/photo-1550340499-a6c60fc8287c" }
+    ]
   },
   {
     "id": 3,
@@ -30,7 +38,11 @@
     "description": "A sprawling, historic capital with museums, markets, and parks around every corner.",
     "tags": ["Culture & Heritage", "City Escapes", "Architecture"],
     "bestTimeToVisit": "June to September",
-    "highlights": ["The British Museum", "Borough Market", "A walk along the Thames"]
+    "highlights": [
+      { "label": "The British Museum", "image": "https://images.unsplash.com/photo-1574236170880-ab0d21a08b0f" },
+      { "label": "Borough Market", "image": "https://images.unsplash.com/photo-1533900298318-6b8da08a523e" },
+      { "label": "A walk along the Thames", "image": "https://images.unsplash.com/photo-1529180184525-78f99adb8e98" }
+    ]
   },
   {
     "id": 4,
@@ -40,8 +52,12 @@
     "image": "https://images.unsplash.com/photo-1600466403153-50193d187dde",
     "description": "New Zealand's adventure capital, framed by mountains and a stunning alpine lake.",
     "tags": ["Nature & Wildlife", "Mountains", "Adventure", "Hiking"],
-    "bestTimeToVisit": "Novebmer to April",
-    "highlights": ["Bungee jumping at Kawarau Bridge", "Skyline Gondola views", "Lake Wakatipu"]
+    "bestTimeToVisit": "November to April",
+    "highlights": [
+      { "label": "Bungee jumping at Kawarau Bridge", "image": "https://images.unsplash.com/photo-1600461813025-3ac02c2f8bd8" },
+      { "label": "Skyline Gondola views", "image": "https://images.unsplash.com/photo-1589802757116-2b6bd6a03f0f" },
+      { "label": "Lake Wakatipu", "image": "https://images.unsplash.com/photo-1589871173980-5c353e5c4c8d" }
+    ]
   },
   {
     "id": 5,
@@ -51,8 +67,12 @@
     "image": "https://images.unsplash.com/photo-1504829857797-ddff29c27927",
     "description": "Gateway to glaciers, geothermal pools, and the Northern Lights.",
     "tags": ["Nature & Wildlife", "Mountains", "Adventure", "Hiking"],
-    "bestTimeToVisit": "Novebmer to April",
-    "highlights": ["Blue Lagoon", "Northern Lights viewing", "Hallgrímskirkja church"]
+    "bestTimeToVisit": "November to April",
+    "highlights": [
+      { "label": "Blue Lagoon", "image": "https://images.unsplash.com/photo-1490080323630-6ec5aab34d7c" },
+      { "label": "Northern Lights viewing", "image": "https://images.unsplash.com/photo-1483347756197-71ef80e95f73" },
+      { "label": "Hallgrímskirkja church", "image": "https://images.unsplash.com/photo-1601088306470-19a2a9d0f1c0" }
+    ]
   },
   {
     "id": 6,
@@ -63,6 +83,10 @@
     "description": "Vibrant souks, rich history, and stunning architecture in the heart of Morocco.",
     "tags": ["Culture & Heritage", "Architecture", "Adventure"],
     "bestTimeToVisit": "January to June",
-    "highlights": ["Jemaa el-Fnaa square", "Bahia Palace", "Souk shopping"]
+    "highlights": [
+      { "label": "Jemaa el-Fnaa square", "image": "https://images.unsplash.com/photo-1553328138-2a5d3d0f7ba9" },
+      { "label": "Bahia Palace", "image": "https://images.unsplash.com/photo-1560346344-3054b57cf50c" },
+      { "label": "Souk shopping", "image": "https://images.unsplash.com/photo-1517410638731-2a8dcb9dc7fa" }
+    ]
   }
 ]
