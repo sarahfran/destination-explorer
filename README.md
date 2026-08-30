@@ -2,10 +2,13 @@
 
 A Next.js app for searching and browsing popular travel destinations.
 
+View live demo: [https://destination-explorer-lyart.vercel.app/]
+
 ## Features
 - Browse a selection of travel destinations
 - Search by city or country
-- View information about each destination, such as highlights and the best time to visit
+- Filter by interests, such as 'Culture & Heritage' or 'Hiking'
+- View information about each destination, such as destination highlights and the best time to visit
 
 ## Built with
 
