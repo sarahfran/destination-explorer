@@ -3,8 +3,8 @@ import { Inter, Cal_Sans } from "next/font/google";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "My Next.js App",
-  description: "Created with Next.js",
+  title: "Destination Explorer",
+  description: "A Next.js app for searching and browsing popular travel destinations.",
   icons: {
     icon: `data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y="0.9em" font-size="90">🦪</text></svg>`,
   },
