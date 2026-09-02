@@ -44,7 +44,7 @@ export default async function DestinationDetailPage({ params } : DestinationPage
         <h2>Known for</h2>
         <div className="destination-tags">
           {destination.tags.map((tag) => (
-            <span className="tag">{tag}</span>
+            <span key={tag} className="tag">{tag}</span>
           ))}
         </div>
       </div>
