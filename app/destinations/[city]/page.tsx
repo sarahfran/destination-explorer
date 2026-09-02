@@ -22,7 +22,7 @@ export default async function DestinationDetailPage({ params } : DestinationPage
     <>
     <div className="destination-banner">
       <Link href="/" className="back">&larr; Back to destinations</Link>
-      <img src={destination.image} className="destination-banner-image" style={{ backgroundImage: `url(${destination.image})` }} alt={destination.city} />
+      <img src={destination.image} className="destination-banner-image" alt={destination.city} />
       <div className="destination-header">
         <h1>Explore {destination.city}</h1>
         <p>{destination.description}</p>
