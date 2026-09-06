@@ -5,6 +5,7 @@ import { useState } from "react";
 import SearchBar from "./SearchBar";
 import InterestFilters from './InterestFilters';
 import DestinationGrid from "./DestinationGrid";
+import RegionDropdown from "./RegionDropdown";
 import { Destination } from "@/app/types";
 
 interface DestinationExplorerProps {
@@ -34,6 +35,7 @@ export default function DestinationExplorer({destinations} : DestinationExplorer
     <>
       <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
       <InterestFilters destinations={destinations} selectedTags={selectedTags} setSelectedTags={setSelectedTags}/>
+      <RegionDropdown destinations={destinations}/>
       <DestinationGrid destinations={filteredDestinations} />
     </>
   )
