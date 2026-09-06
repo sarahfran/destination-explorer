@@ -1,7 +1,7 @@
 .destinations-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
+  grid-template-columns: 1fr;
+  gap: 20px;
   margin-top: 1.5rem;
 }
 
@@ -58,4 +58,16 @@
 
 .destination-card {
   transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+@media (min-width: 768px) {
+  .destinations-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .destinations-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
