@@ -16,6 +16,7 @@ export default function DestinationExplorer({destinations} : DestinationExplorer
 
   const [searchTerm, setSearchTerm] = useState<string>("");
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
+  const [selectedRegion, setSelectedRegion] = useState<string>("");
 
   const filteredDestinations = destinations.filter((destination) => {
     
@@ -27,7 +28,10 @@ export default function DestinationExplorer({destinations} : DestinationExplorer
       // if tags are selected, the destination must share at least one tag present in selectedTags (using some() )
     const matchedTags = selectedTags.length === 0 || destination.tags.some((tag) => selectedTags.includes(tag));
 
+    // if destination.region includes selectedRegion, display countries in that region
+
     return matchedSearch && matchedTags;
+    // return matchedDropdown also
   
   });
 
@@ -35,7 +39,7 @@ export default function DestinationExplorer({destinations} : DestinationExplorer
     <>
       <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
       <InterestFilters destinations={destinations} selectedTags={selectedTags} setSelectedTags={setSelectedTags}/>
-      <RegionDropdown destinations={destinations}/>
+      <RegionDropdown destinations={destinations} selectedRegion={selectedRegion} setSelectedRegion={setSelectedRegion}/>
       <DestinationGrid destinations={filteredDestinations} />
     </>
   )
