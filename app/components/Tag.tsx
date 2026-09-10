@@ -1,17 +1,17 @@
+import styles from './Tag.module.css';
 import { Destination }from "@/app/types";
 
-interface TagsProps {
+interface TagProps {
   destination: Destination;
 }
 
-export default function Tags({ destination } : TagsProps ){
+export default function Tag({ destination } : TagProps ){
 
   return (
     <div className="destination-detail">
-        <h2>Known for</h2>
         <div className="destination-tags">
           {destination.tags.map((tag) => (
-            <span key={tag} className="tag">{tag}</span>
+            <span key={tag} className={styles['tag']}>{tag}</span>
           ))}
         </div>
       </div>

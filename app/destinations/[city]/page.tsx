@@ -1,7 +1,7 @@
 import destinations from "../../../data/destinations.json";
 import "./detail-page.css";
 import Link from "next/link";
-import Tags from "../../components/Tags";
+import Tag from "../../components/Tag";
 
 interface DestinationPageProps {
   params: {city: string};
@@ -41,7 +41,10 @@ export default async function DestinationDetailPage({ params } : DestinationPage
         <p>{destination.population.toLocaleString()}</p>
       </div>
 
-      <Tags destination={destination} />
+      <div className="destination-detail">
+        <h2>Known for</h2>
+        <Tag destination={destination} />
+      </div>
 
       <div className="highlights">
         <h2>{destination.city} Highlights</h2>
