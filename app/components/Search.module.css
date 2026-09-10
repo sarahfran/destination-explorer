@@ -11,23 +11,22 @@
   border-radius: 8px;
 }
 
-.interest-tags {
+.interest-filters {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
   margin-bottom: 4rem;
 }
 
-.tag {
+.filter {
   background-color: white;
   border: 1px solid #d1d5db;
   border-radius: 999px;
   padding: 6px 12px;
-  /* margin-right: 0.5rem; */
   cursor: pointer;
 }
 
-.tag-selected {
+.filter-selected {
   background-color: var(--foreground);
   border-color: var(--foreground);
   color: white;

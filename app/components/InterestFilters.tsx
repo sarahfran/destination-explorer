@@ -1,4 +1,3 @@
-import { useState } from "react";
 import styles from './Search.module.css';
 import { Destination } from "@/app/types";
 
@@ -26,9 +25,9 @@ export default function InterestFilters({ destinations, selectedTags, setSelecte
 
   return (
 
-    <section className={styles['interest-tags']}>
+    <section className={styles['interest-filters']}>
     {interestTags.map((tag) => (
-      <span onClick={() => toggleTag(tag)} className={`${styles.tag} ${selectedTags.includes(tag) ? styles['tag-selected'] : ''}`} key={tag}>{tag}</span>
+      <span onClick={() => toggleTag(tag)} className={`${styles.filter} ${selectedTags.includes(tag) ? styles['filter-selected'] : ''}`} key={tag}>{tag}</span>
     ))}
     </section>
   )
