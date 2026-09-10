@@ -5,7 +5,7 @@ interface TagProps {
   destination: Destination;
 }
 
-export default function Tag({ destination } : TagProps ){
+export default function Tags({ destination } : TagProps ){
 
   return (
     <div className="destination-detail">
