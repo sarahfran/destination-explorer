@@ -6,9 +6,15 @@ interface SearchBarPops {
 }
 
 export default function SearchBar({ searchTerm, setSearchTerm } : SearchBarPops){
+
   return (
     <section className={styles.search}>
-       <input type="text" value={searchTerm} onChange={(event) => setSearchTerm(event.target.value)} className={styles['search-input']} placeholder="Search by country or city"></input>    
+       <input type="text" value={searchTerm} onChange={(event) => setSearchTerm(event.target.value)} className={styles['search-input']} placeholder="Search by country or city" />
+         {searchTerm && (
+          <button onClick={() => setSearchTerm("")}>
+            Clear search
+          </button>
+    )}    
     </section>
   )
 }
