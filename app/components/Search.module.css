@@ -47,7 +47,7 @@
 }
 
 .filter-selected {
-  background-color: var(--foreground);
-  border-color: var(--foreground);
+  background-color: var(--accent);
+  border-color: var(--accent);
   color: white;
 }
