@@ -27,11 +27,10 @@ export default function DestinationExplorer({destinations} : DestinationExplorer
       // if no tags are selected (=== 0), each destination passes
       // if tags are selected, the destination must share at least one tag present in selectedTags (using some() )
     const matchedTags = selectedTags.length === 0 || destination.tags.some((tag) => selectedTags.includes(tag));
+    
+    const matchedRegion = destination.region.includes(selectedRegion);
 
-    // if destination.region includes selectedRegion, display countries in that region
-
-    return matchedSearch && matchedTags;
-    // return matchedDropdown also
+    return matchedSearch && matchedTags && matchedRegion;
   
   });
 

@@ -12,16 +12,13 @@ export default function RegionDropdown ({ destinations, selectedRegion, setSelec
 
   const allRegions = destinations.flatMap((destination) => destination.region);
   const regions = [...new Set(allRegions)];
-
-  // update the selectedRegion state to whatever is selected
-  // event listener for toggle change of the dropdown
-  // value of user's selected option is assigned to selectedRegion state to match with region of destination
   
   return (
-
+    
   <section className={styles['']}>
     <label>Sort by region</label>
-    <select>
+    <select value={selectedRegion} onChange={(event) => setSelectedRegion(event.target.value)}>
+      <option value="">All regions</option>
       {regions.map((region) => <option value={region} key={region}>{region}</option>)}
     </select>
   </section>
