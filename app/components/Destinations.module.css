@@ -6,6 +6,35 @@
 }
 
 .destination-card {
+  position: relative;
+  display: inline-block;
+
+}
+
+.favourite-button {
+  all: unset;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 2em;
+  height: 2em;
+  background-color: white;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--accent);
+}
+
+.favourite-selected {
+  color: var(--accent);
+}
+
+.favourite-button svg:hover {
+  cursor: pointer;
+}
+
+.destination-card-contents {
   height: 100%;
   background: white;
   border-radius: 10px;
@@ -54,9 +83,10 @@
 .destination-card:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
 }
 
-.destination-card {
+.destination-card-contents {
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 

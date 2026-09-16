@@ -16,6 +16,7 @@ export default function DestinationGrid({ destinations } : DestinationGridProps)
     return (  
       <section>
         <h2 className={styles['destinations-heading']}>Places people love</h2>
+        <div>{destinations.length} {destinations.length > 1 ? `destinations found` : `destination found`}</div>
         <div className={styles['destinations-list']}>
         {destinations.map((destination) => (
           <DestinationCard key={destination.id} destination={destination}/>

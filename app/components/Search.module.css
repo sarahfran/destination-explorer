@@ -2,6 +2,12 @@
   margin-bottom: 1.5rem;
 }
 
+.search-bar {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
 .search-input {
   width: 100%;
   padding: 0.75rem 1rem;
@@ -9,6 +15,20 @@
   font-family: var(--body-font);
   border: 1px solid #d1d5db;
   border-radius: 8px;
+  outline-color: var(--accent);
+}
+
+.clear {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-family: var(--body-font);
+  color: var(--accent);
+  cursor: pointer;
+  padding: 4px;
 }
 
 .interest-filters {
@@ -27,7 +47,7 @@
 }
 
 .filter-selected {
-  background-color: var(--foreground);
-  border-color: var(--foreground);
+  background-color: var(--accent);
+  border-color: var(--accent);
   color: white;
 }
