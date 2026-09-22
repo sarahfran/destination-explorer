@@ -15,8 +15,22 @@
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin-bottom: 4rem;
+  margin-bottom: 1.5rem;
 }
+
+/* .interests-dropdown {
+  display:none;
+} */
+
+/* .interests-dropdown {
+  background-color: white;
+  width: 400px;
+  height: 500px;
+} */
+
+/* .dropdown-open {
+  display: block;
+} */
 
 .tag {
   background-color: white;
@@ -30,4 +44,37 @@
   background-color: var(--foreground);
   border-color: var(--foreground);
   color: white;
+}
+
+.select-region {
+  &, &::picker(select){
+    appearance: base-select;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+  }
+  option::checkmark {
+    display: none;
+  }
+  option {
+    padding: 8px;
+  }
+  option:hover {
+    background-color: grey;
+  }
+}
+
+
+.select-region {
+  background-color: white;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  padding: 6px 12px;
+}
+
+.regions-dropdown {
+  margin-bottom: 2rem;
+}
+
+.regions-dropdown label {
+  margin-right: 0.5rem;
 }

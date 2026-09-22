@@ -14,10 +14,10 @@ export default function RegionDropdown ({ destinations, selectedRegion, setSelec
   const regions = [...new Set(allRegions)];
   
   return (
-    
-  <section className={styles['']}>
-    <label>Sort by region</label>
-    <select value={selectedRegion} onChange={(event) => setSelectedRegion(event.target.value)}>
+
+  <section className={styles['regions-dropdown']}>
+    <label>Sort by</label>
+    <select value={selectedRegion} onChange={(event) => setSelectedRegion(event.target.value)} className={styles['select-region']}>
       <option value="">All regions</option>
       {regions.map((region) => <option value={region} key={region}>{region}</option>)}
     </select>
