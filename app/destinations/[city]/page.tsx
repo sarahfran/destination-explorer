@@ -1,6 +1,8 @@
 import destinations from "../../../data/destinations.json";
 import "./detail-page.css";
 import Link from "next/link";
+import Tags from "../../components/Tags";
+import Highlights from "../../components/Highlights";
 
 interface DestinationPageProps {
   params: {city: string};
@@ -40,25 +42,14 @@ export default async function DestinationDetailPage({ params } : DestinationPage
         <p>{destination.population.toLocaleString()}</p>
       </div>
 
-       <div className="destination-detail">
+      <div className="destination-detail">
         <h2>Known for</h2>
-        <div className="destination-tags">
-          {destination.tags.map((tag) => (
-            <span key={tag} className="tag">{tag}</span>
-          ))}
-        </div>
+        <Tags destination={destination} />
       </div>
 
-      <div className="highlights">
+      <div className="destination-highlights">
         <h2>{destination.city} Highlights</h2>
-        <ul className="highlights-list">
-          {destination.highlights.map((highlight) => (
-            <li key={highlight.label} className="highlight">
-              <img src={highlight.image} alt={highlight.label} className="highlights-image" />
-              <label>{highlight.label}</label>
-            </li>
-          ))}
-        </ul>
+        <Highlights destination={destination} />
       </div>
     </section>
     </>
