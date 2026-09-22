@@ -52,7 +52,7 @@
   display: block;
 } */
 
-.tag {
+.filter {
   background-color: white;
   border: 1px solid #d1d5db;
   border-radius: 999px;
@@ -79,7 +79,8 @@
     padding: 8px;
   }
   option:hover {
-    background-color: grey;
+    background-color: var(--accent);
+    color: white;
   }
 }
 
