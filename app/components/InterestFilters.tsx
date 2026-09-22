@@ -1,5 +1,6 @@
 import styles from './Search.module.css';
 import { Destination } from "@/app/types";
+// import { useState } from "react";
 
 interface InterestFiltersProps {
   destinations: Destination[];
@@ -11,7 +12,7 @@ interface InterestFiltersProps {
 
 export default function InterestFilters({ destinations, selectedTags, setSelectedTags } : InterestFiltersProps){
 
-  const [isVisible, setIsVisible] = useState<boolean>(false);
+  // const [isVisible, setIsVisible] = useState<boolean>(false);
   // Use flatMap to put the items in the nested tags array into a single list
   // Use Set to remove the duplicate tags so they are not repeating when displayed
   const interestTags = [...new Set(destinations.flatMap((destination) => destination.tags ))];
