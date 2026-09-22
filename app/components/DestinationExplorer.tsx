@@ -5,6 +5,7 @@ import { useState } from "react";
 import SearchBar from "./SearchBar";
 import InterestFilters from './InterestFilters';
 import DestinationGrid from "./DestinationGrid";
+import RegionDropdown from "./RegionDropdown";
 import { Destination } from "@/app/types";
 
 interface DestinationExplorerProps {
@@ -15,6 +16,7 @@ export default function DestinationExplorer({destinations} : DestinationExplorer
 
   const [searchTerm, setSearchTerm] = useState<string>("");
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
+  const [selectedRegion, setSelectedRegion] = useState<string>("");
 
   const filteredDestinations = destinations.filter((destination) => {
     
@@ -25,8 +27,10 @@ export default function DestinationExplorer({destinations} : DestinationExplorer
       // if no tags are selected (=== 0), each destination passes
       // if tags are selected, the destination must share at least one tag present in selectedTags (using some() )
     const matchedTags = selectedTags.length === 0 || destination.tags.some((tag) => selectedTags.includes(tag));
+    
+    const matchedRegion = destination.region.includes(selectedRegion);
 
-    return matchedSearch && matchedTags;
+    return matchedSearch && matchedTags && matchedRegion;
   
   });
 
@@ -34,6 +38,7 @@ export default function DestinationExplorer({destinations} : DestinationExplorer
     <>
       <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
       <InterestFilters destinations={destinations} selectedTags={selectedTags} setSelectedTags={setSelectedTags}/>
+      <RegionDropdown destinations={destinations} selectedRegion={selectedRegion} setSelectedRegion={setSelectedRegion}/>
       <DestinationGrid destinations={filteredDestinations} />
     </>
   )

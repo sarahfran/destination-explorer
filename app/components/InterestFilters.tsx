@@ -5,10 +5,13 @@ interface InterestFiltersProps {
   destinations: Destination[];
   selectedTags: string[];
   setSelectedTags: (tags: string[]) => void;
+  // isVisible: boolean;
+  // setIsVisible: (value: boolean) => void;
 }
 
 export default function InterestFilters({ destinations, selectedTags, setSelectedTags } : InterestFiltersProps){
 
+  const [isVisible, setIsVisible] = useState<boolean>(false);
   // Use flatMap to put the items in the nested tags array into a single list
   // Use Set to remove the duplicate tags so they are not repeating when displayed
   const interestTags = [...new Set(destinations.flatMap((destination) => destination.tags ))];
@@ -23,12 +26,27 @@ export default function InterestFilters({ destinations, selectedTags, setSelecte
     }
   }
 
+  // const toggleDropdown = function(){
+  //   setIsVisible(!isVisible);
+  // }
+
+  // function toggleDropdown(){
+  //   console.log('toggle clicked');
+  //   if(!isVisible){
+  //     setIsVisible(true);
+  //   }
+    // we want to hide the elements by default 
+    // we want to show the elements on click toggleDropdown
+  // }
+
   return (
 
-    <section className={styles['interest-filters']}>
-    {interestTags.map((tag) => (
-      <span onClick={() => toggleTag(tag)} className={`${styles.filter} ${selectedTags.includes(tag) ? styles['filter-selected'] : ''}`} key={tag}>{tag}</span>
-    ))}
+    <section className={styles['interest-tags']}>
+    {/* <div onClick={toggleDropdown} className={`${styles['interests-dropdown']} ${isVisible ? 'dropdown-open' : ''}`}> */}
+      {interestTags.map((tag) => (
+        <span onClick={() => toggleTag(tag)} className={`${styles.tag} ${selectedTags.includes(tag) ? styles['tag-selected'] : ''}`} key={tag}>{tag}</span>
+      ))}
+    {/* </div>x */}
     </section>
   )
 
