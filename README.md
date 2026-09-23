@@ -32,9 +32,11 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) in your browser
 
-## Notes on Development Process
+## Notes on Project & Development Process
 
-This project was built as part of an application for a junior front-end development role. Prior to this project, I had some basic understanding of React, however, was completely new to Next.js and TypeScript. Ultimately, the purpose of this project was to gain an introduction and understanding of how these tools worked together and to upskill in modern front-end technology.
+This project was built as part of an application for a junior front-end development role, where I was tasked with building a destination explorer that displayed a list of destinations from a mock dataset, and allowed users to view individual destination details. 
+
+Prior to this project, I had some basic understanding of React, however, was completely new to Next.js and TypeScript. Ultimately, the purpose of this project was to gain an introduction and understanding of how these tools worked together and to upskill in modern front-end technology.
 
 I used AI throughout my learning process, to help explain concepts that were difficult or unfamiliar, to help me debug, and to guide my configuration when migrating my project from JavaScrpt to TypeScript. In addition to AI, I conducted my own research by following the Next.js and React documentation, Googling, and watching YouTube videos for concepts I needed more information and clarity on. 
 
@@ -44,7 +46,7 @@ An accessibility audit was conducted using axe DevTools alongside testing manual
 - Added aria attributes for all labels and buttons
 - Changing the interest filters span to be button elements with an aria-pressed attribute to for selected filters
 - Added dynamic aria-label and aria-pressed attributes to the favourites button in DestinationCard to indicate whether this was selected or not
-- Improved semantics of HTML
+- Improved HTML semantics
 
 ## Future Improvements
 
