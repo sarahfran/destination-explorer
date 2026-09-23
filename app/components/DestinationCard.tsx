@@ -20,7 +20,7 @@ export default function DestinationCard({ destination } : DestinationCardProps){
   return ( 
     <>
     <div className={styles['destination-card']}>
-    <button className={styles['favourite-button']} onClick={setFavourite}>
+    <button className={styles['favourite-button']} onClick={setFavourite} role="button" aria-label={isFavourite ? 'Remove from favourites' : 'Add to favourites'} aria-pressed={isFavourite}>
      {isFavourite === true ? (<FaHeart className={styles['favourite-selected']} />) : (<FaRegHeart className={styles['']} />)}
     </button>
     <Link className={styles['destination-link']} href={`/destinations/${destination.city}`}>

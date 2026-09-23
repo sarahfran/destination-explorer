@@ -45,7 +45,7 @@ export default function InterestFilters({ destinations, selectedTags, setSelecte
     <section className={styles['interest-filters']}>
     {/* <div onClick={toggleDropdown} className={`${styles['interests-dropdown']} ${isVisible ? 'dropdown-open' : ''}`}> */}
       {interestTags.map((tag) => (
-        <span onClick={() => toggleTag(tag)} className={`${styles.filter} ${selectedTags.includes(tag) ? styles['filter-selected'] : ''}`} key={tag}>{tag}</span>
+        <button onClick={() => toggleTag(tag)} className={`${styles.filter} ${selectedTags.includes(tag) ? styles['filter-selected'] : ''}`} key={tag} aria-pressed={selectedTags.includes(tag)}>{tag}</button>
       ))}
     {/* </div>x */}
     </section>

@@ -22,16 +22,16 @@ export default async function DestinationDetailPage({ params } : DestinationPage
 
   return (
     <>
-    <div className="destination-banner">
+    <header className="destination-banner">
       <Link href="/" className="back">&larr; Back to destinations</Link>
-      <img src={destination.image} className="destination-banner-image" alt={destination.city} />
+      <img src={destination.image} className="destination-banner-image" alt={`Landscape view of ${destination.city}`} />
       <div className="destination-header">
         <h1>Explore {destination.city}</h1>
         <p>{destination.description}</p>
       </div>
-    </div>  
+    </header>  
 
-    <section className="destination-overview">
+    <main className="destination-overview" aria-label={`Overview of ${destination.city}`}>
       <div className="destination-detail">
         <h2>Best time to visit</h2>
         <p>{destination.bestTimeToVisit}</p>
@@ -51,7 +51,7 @@ export default async function DestinationDetailPage({ params } : DestinationPage
         <h2>{destination.city} Highlights</h2>
         <Highlights destination={destination} />
       </div>
-    </section>
+    </main>
     </>
 
   )

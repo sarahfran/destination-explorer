@@ -2,6 +2,7 @@
   --background: #f7f7f5;
   --foreground: #171717;
   --accent: #4837cb;
+  --grey: #757575;
   --body-font: var(--font-inter), sans-serif;
   --header-font: var(--font-calsans), sans-serif;
 }

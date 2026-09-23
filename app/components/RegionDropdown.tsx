@@ -16,8 +16,8 @@ export default function RegionDropdown ({ destinations, selectedRegion, setSelec
   return (
 
   <section className={styles['regions-dropdown']}>
-    <label>Sort by</label>
-    <select value={selectedRegion} onChange={(event) => setSelectedRegion(event.target.value)} className={styles['select-region']}>
+    <label htmlFor="select-region">Sort by region</label>
+    <select id="select-region" value={selectedRegion} onChange={(event) => setSelectedRegion(event.target.value)} className={styles['select-region']}>
       <option value="">All regions</option>
       {regions.map((region) => <option value={region} key={region}>{region}</option>)}
     </select>
