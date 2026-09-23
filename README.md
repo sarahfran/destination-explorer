@@ -8,6 +8,7 @@ View live demo: https://destination-explorer-lyart.vercel.app/
 - Browse a selection of travel destinations
 - Search by city or country
 - Filter by interests, such as 'Culture & Heritage' or 'Hiking'
+- Sort by regions around the world
 - View information about each destination, such as destination highlights and the best time to visit
 
 ## Built with
@@ -33,16 +34,22 @@ Open [http://localhost:3000](http://localhost:3000) in your browser
 
 ## Notes on Development Process
 
-This was built as part of an application for a Junior Front-end Developer role at Fine Tours Group New Zealand. Prior to this project, I had some basic understanding of React, however, was completely new to Next.js and TypeScript. 
+This project was built as part of an application for a junior front-end development role. Prior to this project, I had some basic understanding of React, however, was completely new to Next.js and TypeScript. Ultimiately, the purpose of this project was to gain an introduction and understanding of how these tools worked together and to upskill in modern front-end technology.
 
 I used AI throughout my learning process, to help explain concepts that were difficult or unfamiliar, to help me debug, and to guide my configuration when migrating my project from JavaScrpt to TypeScript. In addition to AI, I conducted my own research by following the Next.js and React documentation, Googling, and watching YouTube videos for concepts I needed more information and clarity on. 
+
+## Accessibility
+
+An accessibility audit was conducted using axe DevTools alongside testing manual keyboard navigation. Some additions to improve accessibility included:
+- Added aria attributes for all labels and buttons
+- Changing the interest filters span to be button elements with an aria-pressed attribute to for selected filters
+- Added dynamic aria-label and aria-pressed attributes to the favourites button in DestinationCard to indicate whether this was selected or not
+- Improved semantics of HTML
 
 ## Future Improvements
 
 With time I would like to develop this project further and make the application more complex. For example:
-- Fetching data from a real or mock API endpoint
-- Allow users to browse destinations by regions of the world, or through other filtering/sorting options
-- Allow users to favourite destinations 
-- Introduce pagination or a way to manage a larger dataset for better UX
-- Show a search results count
+- Fetching data from a real or mock API endpoint as opposed to importing JSON
+- Enhance sorting/filtering options based a larger dataset
+- Introduce pagination or a way to manage larger dataset for better UX
 - Potentially display the destination details within the same window as search; where users can select destinations and view them side by side, rather than routing to a new page 
