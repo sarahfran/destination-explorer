@@ -36,7 +36,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser
 
 This project was built as part of an application for a junior front-end development role, where I was tasked with building a destination explorer that displayed a list of destinations from a mock dataset, and allowed users to view individual destination details. 
 
-Prior to this project, I had some basic understanding of React, however, was completely new to Next.js and TypeScript. Ultimately, the purpose of this project was to gain an introduction and understanding of how these tools worked together and to upskill in modern front-end technology.
+Prior to this project, I had some basic understanding of React, however, was completely new to Next.js and TypeScript. Rather than being design focused, the purpose of this project was to gain an introduction to these tools and to understand how they work together, and to upskill in modern front-end technology.
 
 I used AI throughout my learning process, to help explain concepts that were difficult or unfamiliar, to help me debug, and to guide my configuration when migrating my project from JavaScrpt to TypeScript. In addition to AI, I conducted my own research by following the Next.js and React documentation, Googling, and watching YouTube videos for concepts I needed more information and clarity on. 
 
@@ -54,4 +54,5 @@ With time I would like to develop this project further and make the application 
 - Fetching data from a real or mock API endpoint as opposed to importing JSON
 - Enhance sorting/filtering options based a larger dataset
 - Introduce pagination or a way to manage larger dataset for better UX
-- Potentially display the destination details within the same window as search; where users can select destinations and view them side by side, rather than routing to a new page 
+- Display destination details within the same window as search; where users can select destinations and view them side by side, rather than routing to a new page 
+- Longer term, I would like to develop this project into a collaborative travel planning tool, where friends can build and share itineraries together
