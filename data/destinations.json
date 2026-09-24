@@ -94,5 +94,149 @@
       { "label": "Bahia Palace", "image": "https://plus.unsplash.com/premium_photo-1673415819362-c2ca640bfafe" },
       { "label": "Souk shopping", "image": "https://plus.unsplash.com/premium_photo-1673415819362-c2ca640bfafe" }
     ]
+  },
+  {
+    "id": 7,
+    "city": "Lisbon",
+    "country": "Portugal",
+    "region": "Europe",
+    "population": 545000,
+    "image": "https://images.unsplash.com/photo-1585208798174-6cedd86e019a",
+    "description": "A hillside capital of pastel buildings, historic trams, and river views at every turn.",
+    "tags": ["Culture & Heritage", "City Escapes","Architecture"],
+    "bestTimeToVisit": "March to May",
+    "highlights": [
+      { "label": "Belém Tower", "image": "https://images.unsplash.com/photo-1555881679-8dd66e6e2d9a" },
+      { "label": "Alfama tram ride", "image": "https://images.unsplash.com/photo-1548707309-dcebeab9ea9b" },
+      { "label": "Time Out Market", "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5" }
+    ]
+  },
+  {
+    "id": 8,
+    "city": "Cape Town",
+    "country": "South Africa",
+    "region": "Africa",
+    "population": 433700,
+    "image": "https://images.unsplash.com/photo-1580060839134-75a5edca2e99",
+    "description": "Table Mountain, wild coastlines, and vineyards all within reach of one city.",
+    "tags": ["Nature & Wildlife", "Mountains", "Adventure", "Hiking"],
+    "bestTimeToVisit": "November to March",
+    "highlights": [
+      { "label": "Table Mountain cable car", "image": "https://images.unsplash.com/photo-1580060839134-75a50c86b3ce" },
+      { "label": "Boulders Beach penguins", "image": "https://images.unsplash.com/photo-1591025207163-942350e47db2" },
+      { "label": "Cape of Good Hope", "image": "https://images.unsplash.com/photo-1544737151-6e4b999de2a8" }
+    ]
+  },
+  {
+    "id": 9,
+    "city": "Kyoto",
+    "country": "Japan",
+    "region": "Asia",
+    "population": 1464000,
+    "image": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e",
+    "description": "Thousands of temples and shrines set among quiet gardens and old wooden streets.",
+    "tags": ["Culture & Heritage", "Architecture"],
+    "bestTimeToVisit": "March to May",
+    "highlights": [
+      { "label": "Fushimi Inari torii gates", "image": "https://images.unsplash.com/photo-1524413840807-0c3cb6fa808d" },
+      { "label": "Arashiyama bamboo grove", "image": "https://images.unsplash.com/photo-1533050487297-09b450131914" },
+      { "label": "Kinkaku-ji Golden Pavilion", "image": "https://images.unsplash.com/photo-1478436127897-769e1b3f0f36" }
+    ]
+  },
+  {
+    "id": 10,
+    "city": "Vancouver",
+    "country": "Canada",
+    "region": "North America",
+    "population": 675200,
+    "image": "https://images.unsplash.com/photo-1560814304-4f05b62af116",
+    "description": "A coastal city where mountains, forest, and ocean sit right at the edge of downtown.",
+    "tags": ["Nature & Wildlife", "Mountains", "City Escapes", "Hiking"],
+    "bestTimeToVisit": "June to September",
+    "highlights": [
+      { "label": "Stanley Park seawall", "image": "https://images.unsplash.com/photo-1559511260-66a654ae982a" },
+      { "label": "Grouse Mountain", "image": "https://images.unsplash.com/photo-1519821172141-b5d8342c2a70" },
+      { "label": "Granville Island Market", "image": "https://images.unsplash.com/photo-1519500099198-fd81846b8f03" }
+    ]
+  },
+  {
+    "id": 11,
+    "city": "Buenos Aires",
+    "country": "Argentina",
+    "region": "South America",
+    "population": 2891000,
+    "image": "https://images.unsplash.com/photo-1589909202802-8f4aadce1849",
+    "description": "Tango, grand old cafés, and European-style boulevards with a distinctly South American energy.",
+    "tags": ["Culture & Heritage", "City Escapes", "Architecture"],
+    "bestTimeToVisit": "September to November",
+    "highlights": [
+      { "label": "La Boca's Caminito", "image": "https://images.unsplash.com/photo-1612294037637-ec328d0e075e" },
+      { "label": "Recoleta Cemetery", "image": "https://images.unsplash.com/photo-1589909202802-8f4aadce1849" },
+      { "label": "Tango show in San Telmo", "image": "https://images.unsplash.com/photo-1504609773096-104ff2c73ba4" }
+    ]
+  },
+  {
+    "id": 12,
+    "city": "Banff",
+    "country": "Canada",
+    "region": "North America",
+    "population": 8700,
+    "image": "https://images.unsplash.com/photo-1609825488888-3a766db05542",
+    "description": "Turquoise lakes and towering peaks in the heart of the Canadian Rockies.",
+    "tags": ["Nature & Wildlife", "Mountains", "Adventure", "Hiking"],
+    "bestTimeToVisit": "June to September",
+    "highlights": [
+      { "label": "Lake Louise", "image": "https://images.unsplash.com/photo-1609825488888-3a766db05542" },
+      { "label": "Moraine Lake", "image": "https://images.unsplash.com/photo-1500534623283-312aade485b7"},
+      { "label": "Sulphur Mountain gondola", "image": "https://images.unsplash.com/photo-1483347756197-71ef80e95f73" }
+    ]
+  },
+  {
+    "id": 13,
+    "city": "Hoi An",
+    "country": "Vietnam",
+    "region": "Asia",
+    "population": 152000,
+    "image": "https://images.unsplash.com/photo-1559592413-7cec4d0cae2b",
+    "description": "Lantern-lit streets and a well-preserved old town along the banks of the Thu Bon River.",
+    "tags": ["Culture & Heritage","City Escapes"],
+    "bestTimeToVisit": "February to April",
+    "highlights": [
+      { "label": "Old Town lanterns at night", "image": "https://images.unsplash.com/photo-1559592413-7cec4d0cae2b" },
+      { "label": "Japanese Covered Bridge", "image": "https://images.unsplash.com/photo-1509923734537-e5c94a908c8e" },
+      { "label": "An Bang Beach", "image": "https://images.unsplash.com/photo-1519046904884-53103b34b206" }
+    ]
+  },
+  {
+    "id": 14,
+    "city": "Edinburgh",
+    "country": "Scotland",
+    "region": "Europe",
+    "population": 526000,
+    "image": "https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb",
+    "description": "A dramatic skyline of castles and cobblestones, with hills to climb right in the city centre.",
+    "tags": ["Culture & Heritage", "Architecture", "Hiking"],
+    "bestTimeToVisit": "May to September",
+    "highlights": [
+      { "label": "Edinburgh Castle", "image": "https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb" },
+      { "label": "Arthur's Seat hike", "image": "https://images.unsplash.com/photo-1571049575518-6753e2b31d24" },
+      { "label": "Royal Mile", "image": "https://images.unsplash.com/photo-1580414057403-c5f451f30e1c" }
+    ]
+  },
+  {
+    "id": 15,
+    "city": "Bali",
+    "country": "Indonesia",
+    "region": "Asia",
+    "population": 4317000,
+    "image": "https://images.unsplash.com/photo-1537996194471-e657df975ab4",
+    "description": "Rice terraces, volcanic peaks, and coastline that shift completely from one side of the island to the other.",
+    "tags": ["Nature & Wildlife", "Adventure", "Culture & Heritage"],
+    "bestTimeToVisit": "April to October",
+    "highlights": [
+      { "label": "Tegallalang rice terraces", "image": "https://images.unsplash.com/photo-1537996194471-e657df975ab4" },
+      { "label": "Uluwatu Temple", "image": "https://images.unsplash.com/photo-1573790387438-4da905039392" },
+      { "label": "Mount Batur sunrise trek", "image": "https://images.unsplash.com/photo-1531592937781-344ad608fabf" }
+    ]
   }
 ]
