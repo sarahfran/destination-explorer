@@ -106,7 +106,7 @@
     "tags": ["Culture & Heritage", "City Escapes","Architecture"],
     "bestTimeToVisit": "March to May",
     "highlights": [
-      { "label": "Belém Tower", "image": "https://images.unsplash.com/photo-1555881679-8dd66e6e2d9a" },
+      { "label": "Belém Tower", "image": "https://images.unsplash.com/photo-1548707309-dcebeab9ea9b" },
       { "label": "Alfama tram ride", "image": "https://images.unsplash.com/photo-1548707309-dcebeab9ea9b" },
       { "label": "Time Out Market", "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5" }
     ]
@@ -122,9 +122,9 @@
     "tags": ["Nature & Wildlife", "Mountains", "Adventure", "Hiking"],
     "bestTimeToVisit": "November to March",
     "highlights": [
-      { "label": "Table Mountain cable car", "image": "https://images.unsplash.com/photo-1580060839134-75a50c86b3ce" },
+      { "label": "Table Mountain cable car", "image": "https://images.unsplash.com/photo-1591025207163-942350e47db2" },
       { "label": "Boulders Beach penguins", "image": "https://images.unsplash.com/photo-1591025207163-942350e47db2" },
-      { "label": "Cape of Good Hope", "image": "https://images.unsplash.com/photo-1544737151-6e4b999de2a8" }
+      { "label": "Cape of Good Hope", "image": "https://images.unsplash.com/photo-1591025207163-942350e47db2" }
     ]
   },
   {
@@ -155,7 +155,7 @@
     "bestTimeToVisit": "June to September",
     "highlights": [
       { "label": "Stanley Park seawall", "image": "https://images.unsplash.com/photo-1559511260-66a654ae982a" },
-      { "label": "Grouse Mountain", "image": "https://images.unsplash.com/photo-1519821172141-b5d8342c2a70" },
+      { "label": "Grouse Mountain", "image": "https://images.unsplash.com/photo-1559511260-66a654ae982a" },
       { "label": "Granville Island Market", "image": "https://images.unsplash.com/photo-1519500099198-fd81846b8f03" }
     ]
   },
@@ -203,7 +203,7 @@
     "bestTimeToVisit": "February to April",
     "highlights": [
       { "label": "Old Town lanterns at night", "image": "https://images.unsplash.com/photo-1559592413-7cec4d0cae2b" },
-      { "label": "Japanese Covered Bridge", "image": "https://images.unsplash.com/photo-1509923734537-e5c94a908c8e" },
+      { "label": "Japanese Covered Bridge", "image": "https://images.unsplash.com/photo-1559592413-7cec4d0cae2b" },
       { "label": "An Bang Beach", "image": "https://images.unsplash.com/photo-1519046904884-53103b34b206" }
     ]
   },
@@ -219,7 +219,7 @@
     "bestTimeToVisit": "May to September",
     "highlights": [
       { "label": "Edinburgh Castle", "image": "https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb" },
-      { "label": "Arthur's Seat hike", "image": "https://images.unsplash.com/photo-1571049575518-6753e2b31d24" },
+      { "label": "Arthur's Seat hike", "image": "https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb" },
       { "label": "Royal Mile", "image": "https://images.unsplash.com/photo-1580414057403-c5f451f30e1c" }
     ]
   },
