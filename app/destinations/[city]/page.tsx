@@ -12,9 +12,13 @@ export default async function DestinationDetailPage({ params } : DestinationPage
 
   const { city } = await params;
 
-  const destination = destinations.find(
-    (destination) => destination.city.toLowerCase() === city.toLowerCase()
-  );
+  const cleanUrlParam = decodeURIComponent(city).toLowerCase().replace(/[\s-]+/g, '');
+
+  const destination = destinations.find((destination) => {
+    const cleanJsonCity = destination.city.toLowerCase().replace(/[\s-]+/g, '');
+    return cleanJsonCity === cleanUrlParam;
+  });
+
 
   if (!destination) {
     return <p>Sorry, destination not found!</p>;

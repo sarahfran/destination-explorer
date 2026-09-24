@@ -16,6 +16,9 @@ export default function DestinationCard({ destination } : DestinationCardProps){
     setIsFavourite(!isFavourite)
   }
 
+  const slugUrl = (destination: string) => {
+    return destination.toLowerCase().replace(/\s+/g, '-');
+  };
 
   return ( 
     <>
@@ -23,7 +26,7 @@ export default function DestinationCard({ destination } : DestinationCardProps){
     <button className={styles['favourite-button']} onClick={setFavourite} role="button" aria-label={isFavourite ? 'Remove from favourites' : 'Add to favourites'} aria-pressed={isFavourite}>
      {isFavourite === true ? (<FaHeart className={styles['favourite-selected']} />) : (<FaRegHeart className={styles['']} />)}
     </button>
-    <Link className={styles['destination-link']} href={`/destinations/${destination.city}`}>
+    <Link className={styles['destination-link']} href={`/destinations/${slugUrl(destination.city)}`}>
       <article className={styles['destination-card-contents']}>
         <img src={destination.image} alt={destination.city} className={styles['destination-image']}></img>
         <div className={styles['destination-info']}>
